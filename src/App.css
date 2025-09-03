@@ -1,0 +1,733 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;  /* underline hata dega */
+  color: inherit;         /* parent ke text ka color le lega */
+}
+
+/* Chrome, Safari, Edge ke liye */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox ke liye */
+html {
+  scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+
+/* IE ke liye */
+body {
+  -ms-overflow-style: none;
+}
+
+
+.app-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  /* gap: 50px; */
+}
+
+/* ==========================================Footer Section  */
+.footer-container {
+  height: 250px;
+ border: 2px solid #1e293b;
+  width: 100%;
+  background-color:#0f172a;
+}
+
+.footer-sec1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20%;
+  width: 100%;
+  color: #38bdf8;
+  font-size: 30px;
+}
+
+.footer-sec2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  gap: 35px;
+  font-size: 15px;
+
+  color: #f8fafc;
+  width: 100%;
+}
+
+.footer-sec3 {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.img-container {
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+ border: 2px solid #1e293b;
+  background-color:#0f172a;
+  /* background-color:#0f172a;:#0f172a;:#0f172a;: rgb(164, 155, 222); */
+}
+
+.img-container:hover {
+  transform: scale(1.1);
+  border-color: darkblue;
+  background-color:#0f172a;
+}
+
+.img-container.image1 {
+  background-image: url("./assets/icons8-github.svg");
+}
+.img-container.image2 {
+  background-image: url("./assets/icons8-gmail.svg");
+}
+.img-container.image3 {
+  background-image: url("./assets/icons8-linkedin.svg");
+}
+
+.footer-sec4 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ color : #f1f5f9;
+  margin-top: 20px;
+}
+
+/* ==========================================Footer Section  */
+
+/* ===========================Project Card  */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+  min-height: 300px;
+  width: 230px;
+  /* border: 2px solid blue; */
+  border-radius: 25px;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color:#0f172a;
+  border: 2px solid #1e293b;
+ color : #f1f5f9;
+}
+
+.cardImg {
+  width: 100%;
+  height: 150px;
+  /* flex: 5; */
+  background-image: url(./assets/project.img/img1.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  /* border: 0.5px solid #f8fafc; */
+}
+
+.card-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 0 5px;
+}
+.card-title {
+  font-size: 18px;
+}
+
+.card-description {
+  font-size: 13px;
+}
+
+.skill-text {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content:space-between; */
+  justify-content: start;
+  gap: 10px;
+}
+
+.show-skill {
+  background-color:#0f172a;
+
+
+
+
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+}
+
+.card-btn {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.project-btn1 {
+  text-decoration: none;
+  text-align: center;
+  width: 95px;
+  border-radius: 20px;
+  background-color:#0f172a;
+  color: #f8fafc;
+  font-weight: bold;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Parent container (Projects.js) me */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  padding: 30px 10;
+  background-color:#0f172a;
+  flex-direction: column;
+  color: #38bdf8; 
+  width: 100%;
+
+}
+
+.project-title{
+ font-size: 2rem;
+  font-weight: 700;
+  color: #38bdf8;
+}
+.projectCard-container{
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
+}
+
+/* ===========================Project Card  */
+
+/* ==============================Skills */
+.skills-main-container {
+  /* border: 2px solid black; */
+  min-height: auto;
+  width: 100%;
+  background-color:#0f172a;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 10px 0;
+}
+
+.skills-heading {
+  padding-top: 20px;
+  height: 20%;
+  width: 100%;
+  color: #38bdf8;
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ font-size: 2rem;
+  font-weight: 600;
+}
+
+.skills-container {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+.skills-container div:hover {
+  transform: scale(1.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 2px;
+}
+
+.icon1 {
+  height: 80px;
+  width: 80px;
+  background-image: url(./assets/skillsimg/icons8-html-5.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon2 {
+  height: 80px;
+  width: 80px;
+  background-image: url(./assets/skillsimg/icons8-css.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon3 {
+  height: 80px;
+  width: 80px;
+  background-image: url(./assets/skillsimg/icons8-javascript.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon4 {
+  height: 80px;
+  width: 80px;
+  background-image: url(./assets/skillsimg/icons8-react.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon5 {
+  height: 80px;
+  width: 80px;
+  background-image: url(./assets/skillsimg/icons8-typescript.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon6 {
+  height: 80px;
+  width: 80px;
+  background-image: url(./assets/skillsimg/icons8tailwind.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon7 {
+  min-height: auto;
+ width: 100%;
+ padding: 60px 20px;
+  background-image: url(./assets/skillsimg/icons-github.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* ==============================Skills */
+/* =============================== About */
+
+.about-container {
+  width: 100%;
+  /* min-height: 100vh; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding-top:120px;
+}
+
+.about-sec1 {
+  display: flex;
+  flex-wrap: wrap; /* responsive ke liye */
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  padding: 40px 60px;
+  background-color:#0f172a;
+  /* border: 2px solid rgb(74, 74, 74); */
+  width: 100%;
+}
+
+.about-child1 {
+  flex: 1;
+   flex-wrap: wrap;
+  max-width: 50%; /* left half */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+ color : #f1f5f9;
+}
+
+.child1-baby1 .about-text1 {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: start;
+  
+}
+
+.child1-baby2 p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.child1-baby3 {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.about-btn1,
+.about-btn2 {
+  padding: 8px 20px;
+  font-size: 14px;
+  border-radius: 20px;
+  background-color: #38bdf8 ;
+ color : #f1f5f9;
+  border: none;
+  cursor: pointer;
+  
+  
+}
+
+.about-btn1:hover,
+.about-btn2:hover {
+  background-color:#0f172a;
+}
+
+/* Right side image */
+.about-child2 {
+  flex: 1;
+  max-width: 40%; /* right half */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.child2-baby {
+  width: 200px; /* jitna chhota karna hai utna equal rakho */
+  height: 200px;
+  background-image: url(./assets/profile.img/profile.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; /* image distort nahi hogi */
+  border-radius: 25%;
+  border: 2px solid #1e293b;
+  
+}
+
+
+/* 
+/* =============================== About */
+
+/* ===========================Navbar */
+.navbar-container {
+  width: 100%;
+  background-color: #0f172a;
+  position: fixed;
+  /* display: ; */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 10px 20px;  /* thoda left-right padding */
+  box-sizing: border-box;
+}
+
+.navbar-main {
+  display: flex;
+  justify-content: space-between; /* logo left, links right */
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Logo Section */
+.navbar-sec1 {
+  font-size: 30px;
+  color: #38bdf8;
+  flex: 1; /* space occupy karne ke liye */
+  text-align: left;
+}
+
+/* Links Section */
+.navbar-sec2 {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-end; links right aligned */
+  justify-content:space-evenly;
+  gap: 30px;  /* even spacing between links */
+  font-size: 18px;
+  color: #38bdf8;
+  flex: 2; /* thoda zyada space links ko */
+}
+
+/* Portfolio button */
+.navbar-portfolio {
+  background-color: #0f172a;
+  border: 2px solid #38bdf8;
+  padding: 6px 15px;
+  border-radius: 20px;
+  color: #38bdf8;
+  cursor: pointer;
+  margin-left: 15px; /* thoda left-right spacing */
+}
+
+/* Hover underline effect */
+.nav-edu {
+  position: relative;
+  cursor: pointer;
+}
+
+.nav-edu::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 2px;
+  background: #ffffff;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.nav-edu:hover::after {
+  transform: scaleX(1);
+}
+
+/* Responsive for small screens */
+@media screen and (max-width: 768px) {
+  .navbar-main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-sec1 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .navbar-sec2 {
+    justify-content: center; /* center links */
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .navbar-portfolio {
+    margin-left: 0;
+    margin-top: 10px; /* small screen me niche aa jaaye */
+  }
+}
+/* ===========================Navbar */
+
+/* =========================Education  */
+
+.education-container {
+  width: 100%;
+  min-height: auto;  /* ✅ 100vh hata do */
+  padding: 20px 20px;
+ /* pura screen ke barabar */
+ background-color:#0f172a;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden; /* horizontal scroll remove */
+  box-sizing: border-box; /* sirf is container ke andar */
+}
+.education-para, .degree-provider {
+   color: white;
+}
+
+.education-sec1 {
+  flex: 1;
+  min-height: 100vh;
+  min-width: 160px;
+  background-color:#0f172a;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.education-title {
+  min-height: 10vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+    color:#38bdf8;
+   
+    font-size: 25px;
+}
+
+.education-img-container {
+  flex: 1;
+    border: 2px solid #1e293b; 
+  display: flex;
+  box-sizing: border-box;
+    padding: 40px;
+}
+  
+.education-img {
+  flex: 1;
+  
+  /* border: 2px solid black; */
+  background-image: url(./assets/Edu.img/profile2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 10px; /* spacing ke liye */
+  max-width: calc(100% - 20px); /* margin ke baad overflow na ho */
+  max-height: calc(100% - 20px);
+  box-sizing: border-box;
+}
+
+.education-sec2 {
+  flex: 1;
+   background-color:#0f172a;
+    border: 2px solid #1e293b; 
+  min-height: 100vh;
+  min-width: 160px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sec2-child1 {
+ flex: 0.25;
+   background-color:#0f172a;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.education-sec2-conatiner1 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+    border: 2px solid #1e293b; /* blue border */
+  background-color:#0f172a;
+  /* align-items: center; */
+  gap: 5px;
+  justify-content: center;
+  border: 2px solid #1e293b; 
+  background-color:#0f172a;
+  position: relative;
+  padding: 10px;
+  font-weight: 500;
+}
+
+.degree-provider{
+font-style: italic;
+font-size: 13px;
+font-weight: 400;
+opacity: 0.75;
+}
+
+.education-span{
+  position: absolute;
+  right: 20px;
+  font-size: 16px;
+   font-weight: 500;
+  color: #3b82f6;
+  
+  
+}
+
+
+/* =========================Education  */
+
+
+/* ============================Experience */
+
+
+.Experience-MainCard {
+    display: flex;
+  flex-direction: column;   /* line by line */
+  align-items: center;      /* center me cards */
+  gap: 20px;
+  padding-top: 20px;
+  width: 100%;
+  min-height: 40vh;
+  background-color:#0f172a; /* Optional background */
+}
+.Exp-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;   /* center align */
+  margin-bottom: 30px;  /* heading aur cards ke beech gap */
+  color: #38bdf8;       /* white (kyunki background dark hai) */
+}
+
+.Exp-maincard {
+  flex: 1 1 180px;       /* Card flexible, min width 300px */
+    width: 80%;        /* Max width */
+}
+
+.Experience-card {
+  background: #fff;         /* White background */
+  border-radius: 12px;      /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Soft shadow */
+  overflow: hidden;         /* Clip extra content */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+
+.Experience-card:hover {
+  transform: translateY(-5px); /* Hover effect */
+}
+
+.Exp-contents {
+  padding: 15px;
+}
+
+.Expl-role {
+  display: flex;
+  justify-content:space-evenly; /* dono ko left-right side me le aayega */
+  align-items: center; /* vertically center */
+font-size: 15px;
+}
+
+.Exp-1 {
+  flex: 1; /* equal width (agar chahiye) */
+   justify-content: start;
+   font-size: 18px;
+}
+
+.Exp-2 {
+  flex: 1; /* equal width (agar chahiye) */
+  display: flex;
+  justify-content: end;
+}
+.Exp-company{
+   font-size: 16px;
+   font-style: italic;
+   opacity: 0.75;
+}
+
+.Exp-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+  color:#38bdf8;
+}
+
+.Exp-des{
+  padding-top: 20px;
+    line-height: 1.6; 
+  
+}
+/* ============================Experience */
+
+
+
+/* ===================================================Media Query */
+
