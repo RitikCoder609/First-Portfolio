@@ -411,14 +411,20 @@ body {
 }
 
 .child2-baby {
-  width: 200px; /* jitna chhota karna hai utna equal rakho */
+  width: 200px; 
   height: 200px;
   background-image: url(./assets/profile.img/profile.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; /* image distort nahi hogi */
-  border-radius: 25%;
+  border-radius: 55%;
   border: 2px solid #1e293b;
+  /* display: flex;
+ flex-wrap: wrap; */
+
+
+
+  
   
 }
 
@@ -441,6 +447,7 @@ body {
 
 .navbar-main {
   display: flex;
+  min-height: 100px;
   justify-content: space-between; /* logo left, links right */
   align-items: center;
   flex-wrap: wrap;
@@ -579,10 +586,10 @@ body {
   background-image: url(./assets/Edu.img/profile2.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+ background-size: cover;
   margin: 10px; /* spacing ke liye */
-  max-width: calc(100% - 20px); /* margin ke baad overflow na ho */
-  max-height: calc(100% - 20px);
+  max-width: calc(100% - 100px); /* margin ke baad overflow na ho */
+  max-height: calc(100% - 10px);
   box-sizing: border-box;
 }
 
@@ -604,6 +611,7 @@ body {
   display: flex;
   flex-direction: column;
   padding: 20px;
+  
 }
 .education-sec2-conatiner1 {
   flex: 1;
@@ -630,7 +638,8 @@ opacity: 0.75;
 
 .education-span{
   position: absolute;
-  right: 20px;
+  /* right: 0px; */
+
   font-size: 16px;
    font-weight: 500;
   color: #3b82f6;
