@@ -591,8 +591,8 @@ flex-direction: row;
   background-position: center;
   background-repeat: no-repeat;
  background-size: cover;
-  margin: 10px; /* spacing ke liye */
-  max-width: calc(100% - 0px); /* margin ke baad overflow na ho */
+  margin: 10px;
+  max-width: calc(80% - 50px); /* margin ke baad overflow na ho */
   max-height: calc(100% - 10px);
   box-sizing: border-box;
 }
